@@ -1,0 +1,33 @@
+{
+  "id": "tales-of-mezoria-system",
+  "title": "Tales of Mezoria System",
+  "description": "Custom game system for Tales of Mezoria in Foundry VTT v13.",
+  "version": "0.0.1",
+  "authors": [
+    {
+      "name": "Shaladar"
+    }
+  ],
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "esmodules": ["system.mjs"],
+  "styles": ["styles.css"],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "packs": [],
+  "scripts": [],
+  "socket": false,
+  "gridDistance": 5,
+  "gridUnits": "ft",
+
+  "url": "https://github.com/Shaladat79/tales-of-mezoria-system",
+  "manifest": "https://raw.githubusercontent.com/Shaladat79/tales-of-mezoria-system/main/system.json",
+  "download": "https://github.com/Shaladat79/tales-of-mezoria-system/archive/refs/heads/main.zip"
+}
