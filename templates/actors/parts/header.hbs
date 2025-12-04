@@ -1,0 +1,84 @@
+{{!-- templates/actors/parts/header.hbs --}}
+
+<header class="sheet-header">
+
+  {{!-- TOP ROW: Type above portrait --}}
+  <div class="header-top-row flexrow">
+    <div class="type-field">
+      <input type="text"
+             value="{{actor.type}}"
+             class="type-display"
+             disabled />
+    </div>
+  </div>
+
+  {{!-- MAIN ROW: Portrait + all character details --}}
+  <div class="header-main-row flexrow">
+
+    {{!-- PORTRAIT --}}
+    <div class="profile">
+      <img class="profile-img"
+           src="{{actor.img}}"
+           data-edit="img"
+           title="{{actor.name}}" />
+    </div>
+
+    {{!-- RIGHT-SIDE FIELDS --}}
+    <div class="header-fields">
+
+      {{!-- CHARACTER NAME --}}
+      <div class="name-row">
+        <input name="name"
+               type="text"
+               value="{{actor.name}}"
+               placeholder="Name" />
+      </div>
+
+      {{!-- RANK / RACE / CLAN / TRIBE --}}
+      <div class="meta-row flexrow">
+
+        {{!-- RANK via partial --}}
+        {{> "systems/tales-of-mezoria-system/templates/actors/parts/subparts/rankdrop.hbs"}}
+
+        {{!-- RACE via partial --}}
+        {{> "systems/tales-of-mezoria-system/templates/actors/parts/subparts/racedrop.hbs"}}
+
+        {{!-- CLAN via partial --}}
+        {{> "systems/tales-of-mezoria-system/templates/actors/parts/subparts/clandrop.hbs"}}
+
+        {{!-- TRIBE via partial --}}
+        {{> "systems/tales-of-mezoria-system/templates/actors/parts/subparts/tribedrop.hbs"}}
+
+      </div>
+
+      {{!-- SPIRIT ECONOMY --}}
+      <div class="meta-row flexrow">
+
+        <div class="field">
+          <label>Current Spirit</label>
+          <input type="number"
+                 name="system.details.currentSpirit"
+                 value="{{system.details.currentSpirit}}" />
+        </div>
+
+        <div class="field">
+          <label>Spent Spirit</label>
+          <input type="number"
+                 name="system.details.spentSpirit"
+                 value="{{system.details.spentSpirit}}" />
+        </div>
+
+        <div class="field">
+          <label>Total Spirit</label>
+          <input type="number"
+                 value="{{system.details.totalSpirit}}"
+                 disabled />
+        </div>
+
+      </div>
+
+    </div> {{!-- /.header-fields --}}
+
+  </div> {{!-- /.header-main-row --}}
+
+</header>
