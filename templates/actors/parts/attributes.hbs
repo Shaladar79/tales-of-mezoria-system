@@ -1,0 +1,201 @@
+{{!-- templates/actors/parts/attributes.hbs --}}
+
+<section class="attributes-section">
+
+  <h2 class="block-title">Attributes</h2>
+
+  <div class="attribute-grid">
+
+    {{!-- =============================
+         BODY COLUMN
+         ============================= --}}
+    <div class="attribute-group">
+      <header class="attribute-group-header">
+        {{system.attributes.body.label}}
+      </header>
+
+      <div class="attr-row primary-attr">
+        <label>Body AVG</label>
+
+        <input type="number"
+               name="system.attributes.body.value"
+               data-dtype="Number"
+               value="{{system.attributes.body.value}}"
+               disabled />
+
+        <button class="roll-attribute"
+                data-attr="body">
+          🎲
+        </button>
+      </div>
+
+      <div class="attr-row">
+        <label>{{system.attributes.body.might.label}}</label>
+        <input type="number"
+               name="system.attributes.body.might.value"
+               data-dtype="Number"
+               value="{{system.attributes.body.might.value}}" />
+
+        <button class="roll-subattribute"
+                data-subattr="body.might">
+          🎲
+        </button>
+      </div>
+
+      <div class="attr-row">
+        <label>{{system.attributes.body.swiftness.label}}</label>
+        <input type="number"
+               name="system.attributes.body.swiftness.value"
+               data-dtype="Number"
+               value="{{system.attributes.body.swiftness.value}}" />
+
+        <button class="roll-subattribute"
+                data-subattr="body.swiftness">
+          🎲
+        </button>
+      </div>
+
+      <div class="attr-row">
+        <label>{{system.attributes.body.endurance.label}}</label>
+        <input type="number"
+               name="system.attributes.body.endurance.value"
+               data-dtype="Number"
+               value="{{system.attributes.body.endurance.value}}" />
+
+        <button class="roll-subattribute"
+                data-subattr="body.endurance">
+          🎲
+        </button>
+      </div>
+    </div>
+
+
+    {{!-- =============================
+         MIND COLUMN
+         ============================= --}}
+    <div class="attribute-group">
+      <header class="attribute-group-header">
+        {{system.attributes.mind.label}}
+      </header>
+
+      <div class="attr-row primary-attr">
+        <label>Mind AVG</label>
+
+        <input type="number"
+               name="system.attributes.mind.value"
+               data-dtype="Number"
+               value="{{system.attributes.mind.value}}"
+               disabled />
+
+        <button class="roll-attribute"
+                data-attr="mind">
+          🎲
+        </button>
+      </div>
+
+      <div class="attr-row">
+        <label>{{system.attributes.mind.insight.label}}</label>
+        <input type="number"
+               name="system.attributes.mind.insight.value"
+               data-dtype="Number"
+               value="{{system.attributes.mind.insight.value}}" />
+
+        <button class="roll-subattribute"
+                data-subattr="mind.insight">
+          🎲
+        </button>
+      </div>
+
+      <div class="attr-row">
+        <label>{{system.attributes.mind.quickness.label}}</label>
+        <input type="number"
+               name="system.attributes.mind.quickness.value"
+               data-dtype="Number"
+               value="{{system.attributes.mind.quickness.value}}" />
+
+        <button class="roll-subattribute"
+                data-subattr="mind.quickness">
+          🎲
+        </button>
+      </div>
+
+      <div class="attr-row">
+        <label>{{system.attributes.mind.willpower.label}}</label>
+        <input type="number"
+               name="system.attributes.mind.willpower.value"
+               data-dtype="Number"
+               value="{{system.attributes.mind.willpower.value}}" />
+
+        <button class="roll-subattribute"
+                data-subattr="mind.willpower">
+          🎲
+        </button>
+      </div>
+    </div>
+
+
+    {{!-- =============================
+         SOUL COLUMN
+         ============================= --}}
+    <div class="attribute-group">
+      <header class="attribute-group-header">
+        {{system.attributes.soul.label}}
+      </header>
+
+      <div class="attr-row primary-attr">
+        <label>Soul AVG</label>
+
+        <input type="number"
+               name="system.attributes.soul.value"
+               data-dtype="Number"
+               value="{{system.attributes.soul.value}}"
+               disabled />
+
+        <button class="roll-attribute"
+                data-attr="soul">
+          🎲
+        </button>
+      </div>
+
+      <div class="attr-row">
+        <label>{{system.attributes.soul.presence.label}}</label>
+        <input type="number"
+               name="system.attributes.soul.presence.value"
+               data-dtype="Number"
+               value="{{system.attributes.soul.presence.value}}" />
+
+        <button class="roll-subattribute"
+                data-subattr="soul.presence">
+          🎲
+        </button>
+      </div>
+
+      <div class="attr-row">
+        <label>{{system.attributes.soul.grace.label}}</label>
+        <input type="number"
+               name="system.attributes.soul.grace.value"
+               data-dtype="Number"
+               value="{{system.attributes.soul.grace.value}}" />
+
+        <button class="roll-subattribute"
+                data-subattr="soul.grace">
+          🎲
+        </button>
+      </div>
+
+      <div class="attr-row">
+        <label>{{system.attributes.soul.resolve.label}}</label>
+        <input type="number"
+               name="system.attributes.soul.resolve.value"
+               data-dtype="Number"
+               value="{{system.attributes.soul.resolve.value}}" />
+
+        <button class="roll-subattribute"
+                data-subattr="soul.resolve">
+          🎲
+        </button>
+      </div>
+    </div>
+
+  </div>
+</section>
