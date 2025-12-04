@@ -1,0 +1,57 @@
+{{!-- templates/actors/parts/information.hbs --}}
+
+<section class="info-section">
+
+  <h2>Information</h2>
+  <hr>
+
+  {{!-- =======================
+       RACE INFORMATION (COLLAPSIBLE)
+       ======================= --}}
+  <details class="info-collapse" open>
+    <summary>Race Description</summary>
+
+    <div class="info-block">
+      {{#if system.details.race}}
+        {{!-- Look up race data by key (e.g. "anthozoan") --}}
+        {{#with (lookup config.raceData system.details.race)}}
+          {{!-- If this race entry is an object with a "description" field, use that --}}
+          {{#if description}}
+            {{{description}}}
+          {{else}}
+            {{!-- Otherwise it might just be a simple string, so print it directly --}}
+            {{this}}
+          {{/if}}
+        {{/with}}
+      {{else}}
+        <em>Select a race to view its description.</em>
+      {{/if}}
+    </div>
+  </details>
+
+  <hr>
+
+  {{!-- =======================
+       BACKGROUND (COLLAPSIBLE)
+       ======================= --}}
+  <details class="info-collapse" open>
+    <summary>Background</summary>
+
+    <div class="info-background-row flexrow">
+      {{!-- BACKGROUND TYPE DROPDOWN --}}
+      {{> "systems/the-marked-system/templates/actors/parts/subparts/backtype.hbs"}}
+
+      {{!-- BACKGROUND DROPDOWN --}}
+      {{> "systems/the-marked-system/templates/actors/parts/subparts/backdrop.hbs"}}
+    </div>
+
+    <div class="info-block">
+      {{#if system.details.background}}
+        {{lookup config.backgroundDescriptions system.details.background}}
+      {{else}}
+        <em>Select a background to view its description.</em>
+      {{/if}}
+    </div>
+  </details>
+
+</section>
