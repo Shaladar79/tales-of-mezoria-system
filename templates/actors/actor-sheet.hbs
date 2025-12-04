@@ -1,0 +1,62 @@
+<form class="marked sheet actor" autocomplete="off">
+
+  {{!-- HEADER --}}
+  {{> "systems/tales-of-mezoria-system/templates/actors/parts/header.hbs"}}
+
+  {{!-- TOP-LEVEL TABS --}}
+  <nav class="sheet-tabs tabs" data-group="primary">
+    <a class="item" data-tab="information">Information</a>
+    <a class="item" data-tab="attr-status">Attributes &amp; Status</a>
+    <a class="item" data-tab="abilities">Abilities</a>
+    <a class="item" data-tab="skills">Skills</a>
+  </nav>
+
+  <section class="sheet-body">
+
+    {{!-- =========================
+         INFORMATION TAB
+         ========================= --}}
+    <div class="tab" data-group="primary" data-tab="information">
+      {{> "systems/tales-of-mezoria-system/templates/actors/parts/information.hbs"}}
+    </div>
+
+    {{!-- =========================
+         ATTRIBUTES & STATUS TAB
+         ========================= --}}
+    <div class="tab" data-group="primary" data-tab="attr-status">
+
+      {{!-- Subtabs inside this tab --}}
+      <nav class="sub-tabs tabs" data-group="sub">
+        <a class="item" data-tab="attributes">Attributes</a>
+        <a class="item" data-tab="status">Status</a>
+      </nav>
+
+      <section class="sub-body">
+
+        <div class="tab" data-group="sub" data-tab="attributes">
+          {{> "systems/tales-of-mezoria-system/templates/actors/parts/attributes.hbs"}}
+        </div>
+
+        <div class="tab" data-group="sub" data-tab="status">
+          {{> "systems/tales-of-mezoria-system/templates/actors/parts/status.hbs"}}
+        </div>
+
+      </section>
+    </div>
+
+    {{!-- =========================
+         ABILITIES TAB
+         ========================= --}}
+    <div class="tab" data-group="primary" data-tab="abilities">
+      {{> "systems/tales-of-mezoria-system/templates/actors/parts/abilities.hbs"}}
+    </div>
+
+    {{!-- =========================
+         SKILLS TAB
+         ========================= --}}
+    <div class="tab" data-group="primary" data-tab="skills">
+      {{> "systems/tales-of-mezoria-system/templates/actors/parts/skills.hbs"}}
+    </div>
+
+  </section>
+</form>
