@@ -60,106 +60,31 @@
             "might": {
               "expertise": false,
 
-              "athletics": {
-                "label": "Athletics",
-                "trained": false,
-                "specialty": "",
-                "total": 0
-              },
-              "bruteForce": {
-                "label": "Brute Force",
-                "trained": false,
-                "specialty": "",
-                "total": 0
-              },
-              "heft": {
-                "label": "Heft",
-                "trained": false,
-                "specialty": "",
-                "total": 0
-              },
-              "intimidation": {
-                "label": "Intimidation",
-                "trained": false,
-                "specialty": "",
-                "total": 0
-              },
-              "combatHeavy": {
-                "label": "Combat: Heavy Weapons",
-                "trained": false,
-                "specialty": "",
-                "total": 0
-              },
-              "combatGrappling": {
-                "label": "Combat: Grappling",
-                "trained": false,
-                "specialty": "",
-                "total": 0
-              },
-              "combatMedium": {
-                "label": "Combat: Medium Weapons",
-                "trained": false,
-                "specialty": "",
-                "total": 0
-              }
+              "athletics":        { "label": "Athletics",        "trained": false, "specialty": "", "total": 0 },
+              "bruteForce":       { "label": "Brute Force",      "trained": false, "specialty": "", "total": 0 },
+              "heft":             { "label": "Heft",             "trained": false, "specialty": "", "total": 0 },
+              "intimidation":     { "label": "Intimidation",     "trained": false, "specialty": "", "total": 0 },
+              "combatHeavy":      { "label": "Combat: Heavy Weapons",   "trained": false, "specialty": "", "total": 0 },
+              "combatGrappling":  { "label": "Combat: Grappling",        "trained": false, "specialty": "", "total": 0 },
+              "combatMedium":     { "label": "Combat: Medium Weapons",  "trained": false, "specialty": "", "total": 0 }
             },
 
             "swiftness": {
               "expertise": false,
 
-              "acrobatics": {
-                "label": "Acrobatics",
-                "trained": false,
-                "specialty": "",
-                "total": 0
-              },
-              "stealth": {
-                "label": "Stealth",
-                "trained": false,
-                "specialty": "",
-                "total": 0
-              },
-              "sleightOfHand": {
-                "label": "Sleight of Hand",
-                "trained": false,
-                "specialty": "",
-                "total": 0
-              },
-              "disarm": {
-                "label": "Disarm",
-                "trained": false,
-                "specialty": "",
-                "total": 0
-              },
-              "combatRanged": {
-                "label": "Combat: Ranged Weapons",
-                "trained": false,
-                "specialty": "",
-                "total": 0
-              },
-              "combatThrowing": {
-                "label": "Combat: Throwing Weapons",
-                "trained": false,
-                "specialty": "",
-                "total": 0
-              }
+              "acrobatics":       { "label": "Acrobatics",       "trained": false, "specialty": "", "total": 0 },
+              "stealth":          { "label": "Stealth",          "trained": false, "specialty": "", "total": 0 },
+              "sleightOfHand":    { "label": "Sleight of Hand",  "trained": false, "specialty": "", "total": 0 },
+              "disarm":           { "label": "Disarm",           "trained": false, "specialty": "", "total": 0 },
+              "combatRanged":     { "label": "Combat: Ranged Weapons",  "trained": false, "specialty": "", "total": 0 },
+              "combatThrowing":   { "label": "Combat: Throwing Weapons", "trained": false, "specialty": "", "total": 0 }
             },
 
             "endurance": {
               "expertise": false,
 
-              "fortitude": {
-                "label": "Fortitude",
-                "trained": false,
-                "specialty": "",
-                "total": 0
-              },
-              "painTolerance": {
-                "label": "Pain Tolerance",
-                "trained": false,
-                "specialty": "",
-                "total": 0
-              }
+              "fortitude":      { "label": "Fortitude",      "trained": false, "specialty": "", "total": 0 },
+              "painTolerance":  { "label": "Pain Tolerance", "trained": false, "specialty": "", "total": 0 }
             }
           },
 
@@ -167,106 +92,31 @@
             "insight": {
               "expertise": false,
 
-              "perception": {
-                "label": "Perception",
-                "trained": false,
-                "specialty": "",
-                "total": 0
-              },
-              "investigation": {
-                "label": "Investigation",
-                "trained": false,
-                "specialty": "",
-                "total": 0
-              },
-              "tracking": {
-                "label": "Tracking",
-                "trained": false,
-                "specialty": "",
-                "total": 0
-              },
-              "lore": {
-                "label": "Lore",
-                "trained": false,
-                "specialty": "",
-                "total": 0
-              },
-              "intuition": {
-                "label": "Intuition",
-                "trained": false,
-                "specialty": "",
-                "total": 0
-              },
-              "awareness": {
-                "label": "Awareness",
-                "trained": false,
-                "specialty": "",
-                "total": 0
-              },
-              "ritualCasting": {
-                "label": "Ritual Casting",
-                "trained": false,
-                "specialty": "",
-                "total": 0
-              },
-              "combatSpellcasting": {
-                "label": "Combat: Spellcasting",
-                "trained": false,
-                "specialty": "",
-                "total": 0
-              }
+              "perception":        { "label": "Perception",        "trained": false, "specialty": "", "total": 0 },
+              "investigation":     { "label": "Investigation",     "trained": false, "specialty": "", "total": 0 },
+              "tracking":          { "label": "Tracking",          "trained": false, "specialty": "", "total": 0 },
+              "lore":              { "label": "Lore",              "trained": false, "specialty": "", "total": 0 },
+              "intuition":         { "label": "Intuition",         "trained": false, "specialty": "", "total": 0 },
+              "awareness":         { "label": "Awareness",         "trained": false, "specialty": "", "total": 0 },
+              "ritualCasting":     { "label": "Ritual Casting",    "trained": false, "specialty": "", "total": 0 },
+              "combatSpellcasting":{ "label": "Combat: Spellcasting", "trained": false, "specialty": "", "total": 0 }
             },
 
             "quickness": {
               "expertise": false,
 
-              "tactics": {
-                "label": "Tactics",
-                "trained": false,
-                "specialty": "",
-                "total": 0
-              },
-              "research": {
-                "label": "Research",
-                "trained": false,
-                "specialty": "",
-                "total": 0
-              },
-              "logic": {
-                "label": "Logic",
-                "trained": false,
-                "specialty": "",
-                "total": 0
-              },
-              "useMagicDevice": {
-                "label": "Use Magic Device",
-                "trained": false,
-                "specialty": "",
-                "total": 0
-              },
-              "combatWands": {
-                "label": "Combat: Wands",
-                "trained": false,
-                "specialty": "",
-                "total": 0
-              }
+              "tactics":          { "label": "Tactics",          "trained": false, "specialty": "", "total": 0 },
+              "research":         { "label": "Research",         "trained": false, "specialty": "", "total": 0 },
+              "logic":            { "label": "Logic",            "trained": false, "specialty": "", "total": 0 },
+              "useMagicDevice":   { "label": "Use Magic Device", "trained": false, "specialty": "", "total": 0 },
+              "combatWands":      { "label": "Combat: Wands",    "trained": false, "specialty": "", "total": 0 }
             },
 
             "willpower": {
               "expertise": false,
 
-              "concentration": {
-                "label": "Concentration",
-                "trained": false,
-                "specialty": "",
-                "total": 0
-              },
-              "mentalFortitude": {
-                "label": "Mental Fortitude",
-                "trained": false,
-                "specialty": "",
-                "total": 0
-              }
+              "concentration":    { "label": "Concentration",    "trained": false, "specialty": "", "total": 0 },
+              "mentalFortitude":  { "label": "Mental Fortitude", "trained": false, "specialty": "", "total": 0 }
             }
           },
 
@@ -274,94 +124,29 @@
             "presence": {
               "expertise": false,
 
-              "persuasion": {
-                "label": "Persuasion",
-                "trained": false,
-                "specialty": "",
-                "total": 0
-              },
-              "deception": {
-                "label": "Deception",
-                "trained": false,
-                "specialty": "",
-                "total": 0
-              },
-              "oratory": {
-                "label": "Oratory",
-                "trained": false,
-                "specialty": "",
-                "total": 0
-              },
-              "etiquette": {
-                "label": "Etiquette",
-                "trained": false,
-                "specialty": "",
-                "total": 0
-              },
-              "streetwise": {
-                "label": "Streetwise",
-                "trained": false,
-                "specialty": "",
-                "total": 0
-              }
+              "persuasion":     { "label": "Persuasion",     "trained": false, "specialty": "", "total": 0 },
+              "deception":      { "label": "Deception",      "trained": false, "specialty": "", "total": 0 },
+              "oratory":        { "label": "Oratory",        "trained": false, "specialty": "", "total": 0 },
+              "etiquette":      { "label": "Etiquette",      "trained": false, "specialty": "", "total": 0 },
+              "streetwise":     { "label": "Streetwise",     "trained": false, "specialty": "", "total": 0 }
             },
 
             "grace": {
               "expertise": false,
 
-              "performance": {
-                "label": "Performance",
-                "trained": false,
-                "specialty": "",
-                "total": 0
-              },
-              "poise": {
-                "label": "Poise",
-                "trained": false,
-                "specialty": "",
-                "total": 0
-              },
-              "mimicry": {
-                "label": "Mimicry",
-                "trained": false,
-                "specialty": "",
-                "total": 0
-              },
-              "improvisation": {
-                "label": "Improvisation",
-                "trained": false,
-                "specialty": "",
-                "total": 0
-              }
+              "performance":     { "label": "Performance",     "trained": false, "specialty": "", "total": 0 },
+              "poise":           { "label": "Poise",           "trained": false, "specialty": "", "total": 0 },
+              "mimicry":         { "label": "Mimicry",         "trained": false, "specialty": "", "total": 0 },
+              "improvisation":   { "label": "Improvisation",   "trained": false, "specialty": "", "total": 0 }
             },
 
             "resolve": {
               "expertise": false,
 
-              "conviction": {
-                "label": "Conviction",
-                "trained": false,
-                "specialty": "",
-                "total": 0
-              },
-              "composure": {
-                "label": "Composure",
-                "trained": false,
-                "specialty": "",
-                "total": 0
-              },
-              "auraControl": {
-                "label": "Aura Control",
-                "trained": false,
-                "specialty": "",
-                "total": 0
-              },
-              "mentalFortitude": {
-                "label": "Mental Fortitude",
-                "trained": false,
-                "specialty": "",
-                "total": 0
-              }
+              "conviction":      { "label": "Conviction",      "trained": false, "specialty": "", "total": 0 },
+              "composure":       { "label": "Composure",       "trained": false, "specialty": "", "total": 0 },
+              "auraControl":     { "label": "Aura Control",    "trained": false, "specialty": "", "total": 0 },
+              "mentalFortitude": { "label": "Mental Fortitude","trained": false, "specialty": "", "total": 0 }
             }
           }
         }
