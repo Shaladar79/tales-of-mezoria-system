@@ -1,1 +1,88 @@
+{{!-- templates/actors/parts/skills.hbs --}}
 
+<section class="skills-section">
+  <h2>Skills</h2>
+
+  {{!-- Subtabs: Body / Mind / Soul --}}
+  <nav class="skills-sub-tabs tabs" data-group="skills-sub">
+    <a class="item" data-tab="body-skills">Body Skills</a>
+    <a class="item" data-tab="mind-skills">Mind Skills</a>
+    <a class="item" data-tab="soul-skills">Soul Skills</a>
+  </nav>
+
+  <section class="skills-sub-body">
+
+    {{!-- =========================
+         BODY SKILLS
+         ========================= --}}
+    <div class="tab" data-group="skills-sub" data-tab="body-skills">
+      <div class="skills-column">
+
+        <details class="skills-block" open>
+          <summary><h3>Might Skills</h3></summary>
+          {{> "systems/the-marked-system/templates/actors/parts/skills/body-might.hbs"}}
+        </details>
+
+        <details class="skills-block">
+          <summary><h3>Swiftness Skills</h3></summary>
+          {{> "systems/the-marked-system/templates/actors/parts/skills/body-swiftness.hbs"}}
+        </details>
+
+        <details class="skills-block">
+          <summary><h3>Endurance Skills</h3></summary>
+          {{> "systems/the-marked-system/templates/actors/parts/skills/body-endurance.hbs"}}
+        </details>
+
+      </div>
+    </div>
+
+    {{!-- =========================
+         MIND SKILLS
+         ========================= --}}
+    <div class="tab" data-group="skills-sub" data-tab="mind-skills">
+      <div class="skills-column">
+
+        <details class="skills-block" open>
+          <summary><h3>Insight Skills</h3></summary>
+          {{> "systems/the-marked-system/templates/actors/parts/skills/mind-insight.hbs"}}
+        </details>
+
+        <details class="skills-block">
+          <summary><h3>Quickness Skills</h3></summary>
+          {{> "systems/the-marked-system/templates/actors/parts/skills/mind-quickness.hbs"}}
+        </details>
+
+        <details class="skills-block">
+          <summary><h3>Willpower Skills</h3></summary>
+          {{> "systems/the-marked-system/templates/actors/parts/skills/mind-willpower.hbs"}}
+        </details>
+
+      </div>
+    </div>
+
+    {{!-- =========================
+         SOUL SKILLS
+         ========================= --}}
+    <div class="tab" data-group="skills-sub" data-tab="soul-skills">
+      <div class="skills-column">
+
+        <details class="skills-block" open>
+          <summary><h3>Presence Skills</h3></summary>
+          {{> "systems/the-marked-system/templates/actors/parts/skills/soul-presence.hbs"}}
+        </details>
+
+        <details class="skills-block">
+          <summary><h3>Grace Skills</h3></summary>
+          {{> "systems/the-marked-system/templates/actors/parts/skills/soul-grace.hbs"}}
+        </details>
+
+        <details class="skills-block">
+          <summary><h3>Resolve Skills</h3></summary>
+          {{> "systems/the-marked-system/templates/actors/parts/skills/soul-resolve.hbs"}}
+        </details>
+
+      </div>
+    </div>
+
+  </section>
+</section>
