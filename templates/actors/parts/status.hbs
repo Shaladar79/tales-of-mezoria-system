@@ -1,0 +1,109 @@
+{{!-- templates/actors/parts/status.hbs --}}
+
+<section class="status-section">
+
+  <h2>Status</h2>
+
+  <div class="status-columns">
+
+    {{!-- =======================
+         COLUMN 1: CORE
+         ======================= --}}
+    <div class="status-column">
+      <h3>Core</h3>
+
+      <div class="status-block">
+        <label>Vitality</label>
+        <div class="status-field triple">
+          <input type="number" name="system.status.vitality.value" value="{{system.status.vitality.value}}" />
+          <span>/</span>
+          <input type="number" name="system.status.vitality.max"   value="{{system.status.vitality.max}}" />
+          <span class="regen-label">(+</span>
+          <input type="number" name="system.status.vitality.regen" value="{{system.status.vitality.regen}}" />
+          <span>/tick)</span>
+        </div>
+      </div>
+
+      <div class="status-block">
+        <label>Mana</label>
+        <div class="status-field triple">
+          <input type="number" name="system.status.mana.value" value="{{system.status.mana.value}}" />
+          <span>/</span>
+          <input type="number" name="system.status.mana.max"   value="{{system.status.mana.max}}" />
+          <span class="regen-label">(+</span>
+          <input type="number" name="system.status.mana.regen" value="{{system.status.mana.regen}}" />
+          <span>/tick)</span>
+        </div>
+      </div>
+
+      <div class="status-block">
+        <label>Stamina</label>
+        <div class="status-field triple">
+          <input type="number" name="system.status.stamina.value" value="{{system.status.stamina.value}}" />
+          <span>/</span>
+          <input type="number" name="system.status.stamina.max"   value="{{system.status.stamina.max}}" />
+          <span class="regen-label">(+</span>
+          <input type="number" name="system.status.stamina.regen" value="{{system.status.stamina.regen}}" />
+          <span>/tick)</span>
+        </div>
+      </div>
+
+      <div class="status-block">
+        <label>Trauma</label>
+        <div class="status-field">
+          <input type="number" name="system.status.trauma.value" value="{{system.status.trauma.value}}" />
+          <span>/</span>
+          <input type="number" name="system.status.trauma.max"   value="{{system.status.trauma.max}}" />
+        </div>
+      </div>
+
+    </div> <!-- END COLUMN -->
+
+    {{!-- =======================
+         COLUMN 2: COMBAT
+         ======================= --}}
+    <div class="status-column">
+      <h3>Combat</h3>
+
+      <div class="status-block">
+        <label>Defense</label>
+        <input type="number" name="system.status.defense.value" value="{{system.status.defense.value}}" />
+      </div>
+
+      <div class="status-block">
+        <label>Reaction</label>
+        <input type="number" name="system.status.reaction.value" value="{{system.status.reaction.value}}" />
+      </div>
+
+      <div class="status-block">
+        <label>Pace</label>
+        <input type="number" name="system.status.pace.value" value="{{system.status.pace.value}}" />
+      </div>
+
+    </div> <!-- END COLUMN -->
+
+    {{!-- =======================
+         COLUMN 3: PROTECTION
+         ======================= --}}
+    <div class="status-column">
+      <h3>Protection</h3>
+
+      <div class="status-block">
+        <label>Armor</label>
+        <div class="status-field">
+          <input type="number" name="system.status.armor.value" value="{{system.status.armor.value}}" />
+          <span>/</span>
+          <input type="number" name="system.status.armor.max"   value="{{system.status.armor.max}}" />
+        </div>
+      </div>
+
+      <div class="status-block">
+        <label>Shielding</label>
+        <input type="number" name="system.status.shielding.value" value="{{system.status.shielding.value}}" />
+      </div>
+
+    </div> <!-- END COLUMN -->
+
+  </div> <!-- END status-columns -->
+
+</section>
