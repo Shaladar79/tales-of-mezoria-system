@@ -1,0 +1,44 @@
+{{!-- templates/chat/roll-card.hbs --}}
+
+<section class="marked-roll-card">
+  <header class="roll-header">
+    <strong>{{title}}</strong>
+  </header>
+
+  <div class="roll-body">
+    <div class="roll-line">
+      <span class="roll-label">TN:</span>
+      <span class="roll-value">{{tn}}</span>
+
+      {{#if tags.length}}
+        <span class="roll-tags">
+          [
+          {{#each tags}}
+            {{#if @index}}, {{/if}}{{this}}
+          {{/each}}
+          ]
+        </span>
+      {{/if}}
+    </div>
+
+    <div class="roll-line">
+      <span class="roll-label">Roll:</span>
+      <span class="roll-value">{{total}}</span>
+
+      {{#if isCrit}}
+        <span class="roll-flag">(Critical Success!)</span>
+      {{/if}}
+
+      {{#if isFailure}}
+        {{#unless isCrit}}
+          <span class="roll-flag">(Failure)</span>
+        {{/unless}}
+      {{/if}}
+    </div>
+
+    <div class="roll-line">
+      <span class="roll-label">Successes:</span>
+      <span class="roll-value">{{successes}}</span>
+    </div>
+  </div>
+</section>
