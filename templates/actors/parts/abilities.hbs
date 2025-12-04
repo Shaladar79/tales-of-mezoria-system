@@ -1,0 +1,18 @@
+{{!-- templates/actors/parts/abilities.hbs --}}
+
+<section class="abilities-section">
+  <h2>Mark of Purpose</h2>
+
+  <div class="marks-grid">
+    {{> "systems/tales-of-mezoria-system/templates/actors/parts/subparts/mopdrop.hbs"}}
+  </div>
+
+  {{!-- Mark description appears dynamically here --}}
+  <div class="mark-description">
+    {{#if system.details.markOfPurpose}}
+      {{lookup config.markOfPurposeDescriptions system.details.markOfPurpose}}
+    {{else}}
+      Select a Mark of Purpose to see its description.
+    {{/if}}
+  </div>
+</section>
